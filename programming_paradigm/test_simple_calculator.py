@@ -27,8 +27,7 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.add(100, 0), 100)     # Adding zero
         self.assertEqual(self.calc.add(-7, 0), -7)       # Adding zero to negative
 
-    # RENAMED FROM test_subtract TO test_subtraction to match checker's requirement
-    def test_subtraction(self):
+    def test_subtraction(self): # This was previously renamed; keeping it consistent
         """
         Test the subtract method with various numerical inputs.
         """
@@ -41,7 +40,8 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.subtract(0, 10), -10)  # Subtracting from zero
         self.assertEqual(self.calc.subtract(7.5, 2.5), 5.0) # Floats
 
-    def test_multiply(self):
+    # RENAMED FROM test_multiply TO test_multiplication
+    def test_multiplication(self):
         """
         Test the multiply method with various numerical inputs.
         """
@@ -55,7 +55,8 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.multiply(2.5, 2), 5.0)  # Float by integer
         self.assertEqual(self.calc.multiply(1.5, 1.5), 2.25) # Floats
 
-    def test_divide(self):
+    # RENAMED FROM test_divide TO test_division
+    def test_division(self):
         """
         Test the divide method with normal cases and division by zero.
         """
