@@ -23,7 +23,7 @@ class Calculator:
         return a + b
 
     @classmethod
-    def multiply(cls, a: float, b: float) -> float:
+    def multiply(cls, a, b): # Removed float type hints here
         """
         A class method that returns the product of two numbers.
         Class methods receive the class itself as the first implicit argument (cls).
@@ -31,11 +31,11 @@ class Calculator:
 
         Args:
             cls: The class itself (Calculator in this case).
-            a (float): The first number.
-            b (float): The second number.
+            a: The first number.
+            b: The second number.
 
         Returns:
-            float: The product of a and b.
+            The product of a and b.
         """
         # Accessing the class attribute 'calculation_type' using 'cls'
         print(f"Calculation type: {cls.calculation_type}")
