@@ -22,7 +22,7 @@ class Book:
         self.title = title
         self.author = author
         self.year = year
-        print(f"Book '{self.title}' by {self.author} created.") # Optional: confirm creation
+        # Removed the optional print statement that was causing extra output.
 
 
     def __del__(self):
